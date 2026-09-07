@@ -2,15 +2,15 @@
    Design tokens
    ========================================================================== */
 :root {
-  --blue-deep:   #FF00CC;
-  --blue-main:   #FF33CC;
-  --blue-bright: #FF66CC;
-  --blue-tint:   #FF99CC;
-  --blue-pale:   #FFCCCC;
+  --blue-deep:   #A6285F;
+  --blue-main:   #D6336C;
+  --blue-bright: #F06595;
+  --blue-tint:   #FCEAF1;
+  --blue-pale:   #FFF6F9;
   --white:       #FFFFFF;
-  --ink:         #FF0099;
-  --ink-soft:    #FF3399;
-  --line:        #FF9999;
+  --ink:         #3A2130;
+  --ink-soft:    #77596A;
+  --line:        #F6D9E4;
 
   --font-head: 'Kanit', sans-serif;
   --font-body: 'Sarabun', sans-serif;
