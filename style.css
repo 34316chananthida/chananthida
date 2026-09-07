@@ -456,8 +456,8 @@ a { color: var(--blue-main); }
 .activity-item:last-child { border-bottom: none; }
 
 .activity-item__photo {
-  width: 240px;
-  height: 160px;
+  width: 300px;
+  height: 211px;
   border-radius: 10px;
   border: 3px dashed var(--blue-bright);
   background: var(--blue-tint);
