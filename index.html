@@ -1,85 +1,220 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - หน้าปก</title>
-    <style>
-        * { box-sizing: border-box; margin: 0; padding: 0; }
-        body { font-family: 'Sarabun', sans-serif; background: #f8fafc; color: #334155; padding-bottom: 40px; }
-        
-        /* แถบเมนูด้านบน */
-        nav { background: #1e293b; padding: 15px; text-align: center; }
-        nav a { color: #f8fafc; text-decoration: none; margin: 0 10px; font-weight: 500; font-size: 0.95rem; }
-        nav a.active { color: #3b82f6; border-bottom: 2px solid #3b82f6; padding-bottom: 4px; }
-        
-        /* พื้นที่เนื้อหาหลัก */
-        .container { max-width: 800px; margin: 40px auto; background: #fff; padding: 50px 30px; border-radius: 12px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
-        
-        /* กล่องข้อมูลแนะนำตัว */
-        .info-box { 
-            background: #f0f9ff; 
-            padding: 25px; 
-            border-radius: 10px; 
-            display: block; 
-            text-align: left; 
-            border: 1px solid #bae6fd; 
-            margin: 0 auto 20px auto;
-            max-width: 500px;
-        }
-        .info-box h2 { font-size: 1.25rem; color: #0369a1; margin-bottom: 12px; border-bottom: 2px solid #bae6fd; padding-bottom: 5px; }
-        .info-box p { font-size: 1.05rem; color: #0369a1; margin-bottom: 8px; line-height: 1.6; }
-        
-        /* กล่องช่องทางติดต่อ */
-        .contact-box { 
-            background: #f0fdf4; 
-            padding: 25px; 
-            border-radius: 10px; 
-            display: block; 
-            text-align: left; 
-            border: 1px solid #bbf7d0; 
-            margin: 0 auto;
-            max-width: 500px;
-        }
-        .contact-box h2 { font-size: 1.25rem; color: #15803d; margin-bottom: 12px; border-bottom: 2px solid #bbf7d0; padding-bottom: 5px; }
-        .contact-box p { font-size: 1.05rem; color: #166534; margin-bottom: 10px; }
-        .contact-box a { color: #16a34a; text-decoration: none; font-weight: 600; }
-        .contact-box a:hover { text-decoration: underline; }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>รัมพึง โฉมวิลัย | แฟ้มสะสมผลงาน</title>
+
+<!-- Google Fonts: Kanit สำหรับหัวข้อ, Sarabun สำหรับเนื้อหา -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&family=Sarabun:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- เมนูเปลี่ยนหน้า -->
-<nav>
-    <a href="index.html" class="active">หน้าปก</a>
-    <a href="intro.html">คำนำ</a>
-    <a href="profile.html">ประวัติส่วนตัว</a>
-    <a href="education.html">ความสนใจศึกษาต่อ</a>
-    <a href="activities.html">กิจกรรม</a>
-    <a href="skills.html">ความสามารถพิเศษ</a>
-</nav>
+  <!-- ===================== แถบนำทาง ===================== -->
+  <header class="navbar">
+    <div class="navbar__rail" aria-hidden="true"></div>
+    <nav class="navbar__inner">
+      <a href="#home" class="navbar__brand">Ramphueng Chomwilai<span>.</span></a>
+      <ul class="navbar__links">
+        <li><a href="#home" data-nav>หน้าแรก</a></li>
+        <li><a href="#foreword" data-nav>คำนำ</a></li>
+        <li><a href="#profile" data-nav>ประวัติส่วนตัว</a></li>
+        <li><a href="#education" data-nav>ประวัติการศึกษา</a></li>
+        <li><a href="#future" data-nav>แนวทางการเรียนต่อ</a></li>
+        <li><a href="#activities" data-nav>กิจกรรม</a></li>
+        <li><a href="#skills" data-nav>ความสามารถพิเศษ</a></li>
+      </ul>
+      <button class="navbar__toggle" id="navToggle" aria-label="เปิดเมนู" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
 
-<div class="container">
-    <!-- แสดงรูปตามสัดส่วนจริง ย่อขนาดความกว้างเหลือ 380px -->
-    <img src="IMG_8695.jpeg" alt="รูปโปรไฟล์" style="width: 380px; max-width: 100%; height: auto; border-radius: 12px; border: 3px solid #3b82f6; margin-bottom: 25px;">
-    
-    <!-- แนะนำตัว -->
-    <div class="info-box">
-        <h2> แนะนำตัว</h2>
-        <p><strong>ชื่อ-นามสกุล:</strong> นางสาวธวัลรัตน์ พัชเกษร</p>
-        <p><strong>สถานะ:</strong> นักเรียนชั้นมัธยมศึกษาปีที่ 6</p>
-        <p><strong>สายการเรียน:</strong> วิทยาศาสตร์-คณิตศาสตร์ เตรียมวิศวะ</p>
-        <p><strong>โรงเรียน:</strong> บ้านบึง “อุตสาหกรรมนุเคราะห์”</p>
+  <!-- ===================== หน้าแรก ===================== -->
+  <section id="home" class="section hero">
+    <div class="hero__center">
+      <div class="hero__photo">
+        <img src="Profile.jpg" alt="รัมพึง โฉมวิลัย">
+        <!-- แทนที่ span ด้านบนด้วย: <img src="ชื่อไฟล์รูป.jpg" alt="รัมพึง โฉมวิลัย"> -->
+      </div>
+      <h1 class="hero__name">นางสาวรัมพึง โฉมวิลัย <span class="hero__nickname">(มิน)</span></h1>
+      <p class="hero__detail">ชั้นมัธยมศึกษาปีที่ 6</p>
+      <p class="hero__detail">แผนการเรียน วิทยาศาสตร์ - คณิตศาสตร์ (เตรียมวิศวกรรมศาสตร์)</p>
+      <p class="hero__detail">โรงเรียนบ้านบึง &quot;อุตสาหกรรมนุเคราะห์&quot;</p>
     </div>
 
-    <!-- ช่องทางติดต่อ -->
-    <div class="contact-box">
-        <h2> ช่องทางการติดต่อ</h2>
-        <p> <strong>Instagram :</strong> <a href="https://instagram.com/pxpr_.3wq" target="_blank">pxpr_.3wq</a></p>
-        <p> <strong>Facebook :</strong> <a href="https://facebook.com" target="_blank">Tati Tauwxn</a></p>
-        <p> <strong>Gmail :</strong> <a href="mailto:s34322@banbung.ac.th">s34322@banbung.ac.th</a></p>
+    <div class="hero__contact">
+      <h2 class="hero__contact-title">ช่องทางการติดต่อ</h2>
+      <ul>
+        <li>
+          <span class="hero__contact-label">Instagram</span>
+          <a href="https://www.instagram.com/min.ramphueng/" target="_blank" rel="noopener">min.ramphueng</a>
+        </li>
+        <li>
+          <span class="hero__contact-label">Facebook</span>
+          <a href="https://www.facebook.com/min.ramphueng" target="_blank" rel="noopener">min.ramphueng</a>
+        </li>
+        <li>
+          <span class="hero__contact-label">Gmail</span>
+          <a href="mailto:ramphuengchomwilai@gmail.com">ramphuengchomwilai@gmail.com</a>
+        </li>
+      </ul>
     </div>
-</div>
 
+    <a href="#foreword" class="hero__scroll" aria-label="เลื่อนลงไปยังคำนำ">
+      <span></span>
+    </a>
+  </section>
+
+  <div class="rail-divider" aria-hidden="true"></div>
+
+  <!-- ===================== คำนำ ===================== -->
+  <section id="foreword" class="section foreword">
+    <div class="section__inner">
+      <p class="section__eyebrow">01</p>
+      <h2 class="section__title">คำนำ</h2>
+      <div class="foreword__text">
+        <p>เว็บไซต์แฟ้มสะสมผลงานฉบับนี้จัดทำขึ้นเพื่อรวบรวม เรียบเรียง และนำเสนอผลงานตลอดระยะเวลาการศึกษาในระดับมหาวิทยาลัย โดยมีวัตถุประสงค์เพื่อแสดงให้เห็นถึงพัฒนาการทางด้านความรู้ ทักษะ และประสบการณ์ที่ได้สั่งสมมาอย่างต่อเนื่อง ทั้งจากการเรียนในห้องเรียน การฝึกปฏิบัติงานจริง การทำโครงงานและกิจกรรมต่าง ๆ ที่เกี่ยวข้องกับสาขาวิชาที่ศึกษา</p>
+        <p>ผลงานแต่ละชิ้นที่ปรากฏในแฟ้มสะสมผลงานนี้ล้วนสะท้อนถึงกระบวนการคิด การแก้ปัญหา ความคิดสร้างสรรค์ และความรับผิดชอบในการทำงาน ซึ่งเป็นคุณสมบัติสำคัญที่จำเป็นต่อการประกอบวิชาชีพในอนาคต นอกจากนี้ แฟ้มสะสมผลงานยังทำหน้าที่เป็นเครื่องมือในการทบทวนตนเอง ช่วยให้เห็นภาพรวมของเส้นทางการเรียนรู้ที่ผ่านมา และเป็นแนวทางในการพัฒนาตนเองต่อไปในภายภาคหน้า</p>
+        <p>ผู้จัดทำหวังเป็นอย่างยิ่งว่าแฟ้มสะสมผลงานฉบับนี้จะเป็นประโยชน์ต่อผู้ที่สนใจศึกษาข้อมูล ไม่ว่าจะเป็นคณาจารย์ ผู้ประกอบการ หรือหน่วยงานที่เกี่ยวข้อง และหวังว่าจะสามารถถ่ายทอดตัวตน ความสามารถ ตลอดจนความมุ่งมั่นตั้งใจในการก้าวเข้าสู่วิชาชีพได้อย่างครบถ้วนสมบูรณ์</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ประวัติส่วนตัว ===================== -->
+  <section id="profile" class="section profile">
+    <div class="section__inner profile__grid">
+      <div class="profile__photo">
+        <img src="Profile.jpg" alt="รัมพึง โฉมวิลัย">
+        <!-- แทนที่ span ด้านบนด้วย: <img src="ชื่อไฟล์รูป.jpg" alt="รัมพึง โฉมวิลัย"> -->
+      </div>
+      <div class="profile__info">
+        <p class="section__eyebrow">02</p>
+        <h2 class="section__title">ประวัติส่วนตัว</h2>
+        <dl class="profile__list">
+          <div><dt>ชื่อ - นามสกุล</dt><dd>นางสาวรัมพึง โฉมวิลัย</dd></div>
+          <div><dt>ชื่อเล่น</dt><dd>มิน</dd></div>
+          <div><dt>วัน/เดือน/ปีเกิด</dt><dd>27 พฤศจิกายน 2551</dd></div>
+          <div><dt>หมู่เลือด</dt><dd>B</dd></div>
+          <div><dt>เชื้อชาติ</dt><dd>ไทย</dd></div>
+          <div><dt>สัญชาติ</dt><dd>ไทย</dd></div>
+          <div><dt>ศาสนา</dt><dd>พุทธ</dd></div>
+          <div><dt>งานอดิเรก</dt><dd>ดูหนัง ฟังเพลง เล่นเกม เล่นดนตรี</dd></div>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ประวัติการศึกษา ===================== -->
+  <section id="education" class="section education">
+    <div class="section__inner">
+      <p class="section__eyebrow">03</p>
+      <h2 class="section__title">ประวัติการศึกษา</h2>
+      <ol class="rail-timeline">
+        <li>
+          <span class="rail-timeline__level">ระดับอนุบาล</span>
+          <span class="rail-timeline__school">โรงเรียนพิทยรังสี</span>
+        </li>
+        <li>
+          <span class="rail-timeline__level">ระดับประถมศึกษา</span>
+          <span class="rail-timeline__school">โรงเรียนพิทยรังสี</span>
+        </li>
+        <li>
+          <span class="rail-timeline__level">ระดับมัธยมศึกษาตอนต้น</span>
+          <span class="rail-timeline__school">โรงเรียนบ้านบึง &quot;อุตสาหกรรมนุเคราะห์&quot;</span>
+        </li>
+        <li>
+          <span class="rail-timeline__level">ระดับมัธยมศึกษาตอนปลาย</span>
+          <span class="rail-timeline__school">โรงเรียนบ้านบึง &quot;อุตสาหกรรมนุเคราะห์&quot;</span>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <div class="rail-divider" aria-hidden="true"></div>
+  <!-- ===================== แนวทางการเรียนต่อ ===================== -->
+  <section id="future" class="section future">
+    <div class="section__inner">
+      <p class="section__eyebrow">04</p>
+      <h2 class="section__title">แนวทางการเรียนต่อ</h2>
+      <h3 class="future__subtitle">ความสนใจในการศึกษาต่อ</h3>
+      <div class="future__text">
+        <p>จากประสบการณ์การเรียนรู้และการลงมือปฏิบัติจริงที่ได้สั่งสมมาตลอดระยะเวลาที่ผ่านมา ไม่ว่าจะเป็นการเรียนในห้องเรียน การทำโครงงาน หรือกิจกรรมที่เกี่ยวข้องกับด้านวิทยาศาสตร์ เทคโนโลยี และระบบโครงสร้างพื้นฐาน ล้วนเป็นแรงผลักดันสำคัญที่ทำให้เกิดความสนใจและความมุ่งมั่นที่จะศึกษาต่อในระดับอุดมศึกษา คณะวิศวกรรมศาสตร์ สาขาวิชาวิศวกรรมขนส่งทางราง ซึ่งเป็นสาขาวิชาที่มีบทบาทสำคัญต่อการพัฒนาโครงสร้างพื้นฐานด้านคมนาคมของประเทศ ทั้งในด้านการออกแบบ การก่อสร้าง การควบคุมระบบ ตลอดจนการบำรุงรักษาระบบรางที่ต้องอาศัยองค์ความรู้ทางวิศวกรรมหลายแขนงผสมผสานกัน ไม่ว่าจะเป็นวิศวกรรมโยธา วิศวกรรมไฟฟ้า วิศวกรรมเครื่องกล และระบบอาณัติสัญญาณ</p>
+        <p>ปัจจุบันประเทศไทยอยู่ในช่วงของการขยายตัวและพัฒนาโครงข่ายระบบขนส่งทางรางอย่างต่อเนื่อง ทั้งรถไฟความเร็วสูง รถไฟฟ้าขนส่งมวลชน และระบบรางเชื่อมโยงภูมิภาค ซึ่งสะท้อนให้เห็นถึงความต้องการบุคลากรที่มีความรู้ความเชี่ยวชาญเฉพาะทางด้านนี้เพิ่มมากขึ้น การได้ฝึกฝนกระบวนการคิดวิเคราะห์ การวางแผน การทำงานเป็นระบบ และการแก้ไขปัญหาผ่านโครงงานต่าง ๆ ตลอดระยะเวลาการศึกษาที่ผ่านมา ได้หล่อหลอมให้เกิดพื้นฐานความเข้าใจในกระบวนการทำงานทางวิศวกรรมที่สอดคล้องกับลักษณะการเรียนในสาขาวิศวกรรมขนส่งทางราง ซึ่งต้องอาศัยทั้งความละเอียดรอบคอบ ความแม่นยำ และความรับผิดชอบสูง เนื่องจากเกี่ยวข้องโดยตรงกับความปลอดภัยของผู้ใช้บริการระบบขนส่งสาธารณะ</p>
+        <p>การเลือกศึกษาต่อในสาขาวิศวกรรมขนส่งทางรางจึงไม่เพียงเป็นการต่อยอดความรู้และทักษะที่มีอยู่เดิม แต่ยังเป็นก้าวสำคัญในการเตรียมความพร้อมสู่การเป็นวิศวกรที่มีองค์ความรู้เฉพาะทาง สามารถร่วมพัฒนาโครงสร้างพื้นฐานด้านคมนาคมของประเทศให้มีความทันสมัย ปลอดภัย และมีประสิทธิภาพ อันจะเป็นประโยชน์ต่อการพัฒนาเศรษฐกิจและสังคมของประเทศชาติในระยะยาวต่อไป</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== กิจกรรม ===================== -->
+  <section id="activities" class="section activities">
+    <div class="section__inner">
+      <p class="section__eyebrow">05</p>
+      <h2 class="section__title">กิจกรรม</h2>
+
+      <div class="activity-item">
+        <div class="activity-item__photo">
+          <img src="Activity1.jpg" alt="รัมพึง โฉมวิลัย">
+        </div>
+        <div class="activity-item__text">
+          <h3>กิจกรรมที่ 1</h3>
+          <p>เปิดโลกวิชาการ - กิจกรรมปลูกป่าชายเลน</p>
+        </div>
+      </div>
+
+      <div class="activity-item">
+        <div class="activity-item__photo">
+          <img src="Activity2.jpg" alt="รัมพึง โฉมวิลัย">
+        </div>
+        <div class="activity-item__text">
+          <h3>กิจกรรมที่ 2</h3>
+          <p>Staff ในงาน "วันวิทยาศาสตร์" ประจำปีการศึกษา 2569</p>
+        </div>
+      </div>
+
+      <div class="activity-item">
+        <div class="activity-item__photo">
+          <img src="Activity3.jpg" alt="รัมพึง โฉมวิลัย">
+        </div>
+        <div class="activity-item__text">
+          <h3>กิจกรรมที่ 3</h3>
+          <p>บริจาคสิ่งของและอาหารแห้ง ให้กับมูลนิธิ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="rail-divider" aria-hidden="true"></div>
+
+  <!-- ===================== ความสามารถพิเศษ ===================== -->
+  <section id="skills" class="section skills">
+    <div class="section__inner">
+      <p class="section__eyebrow">06</p>
+      <h2 class="section__title">ความสามารถพิเศษ</h2>
+      <div class="skills__grid">
+        <div class="skill-card">
+          <span class="skill-card__icon">♪</span>
+          <span class="skill-card__label">ร้องเพลง</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-card__icon">🎸</span>
+          <span class="skill-card__label">เล่นดนตรี</span>
+        </div>
+        <div class="skill-card">
+          <span class="skill-card__icon">⚽</span>
+          <span class="skill-card__label">เล่นกีฬา</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <p>&copy; รัมพึง โฉมวิลัย — แฟ้มสะสมผลงาน</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
