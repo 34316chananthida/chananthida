@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - ความสนใจศึกษาต่อ</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Sarabun', sans-serif;
+            background: #fff7fb;
+            color: #8f3d60;
+            padding-bottom: 40px;
+        }
+
+        /* แถบเมนูด้านบน */
+        nav {
+            background: #c75b83;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff8fb;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        nav a.active {
+            color: #ffe4ef;
+            border-bottom: 2px solid #ffe4ef;
+            padding-bottom: 4px;
+        }
+
+        /* พื้นที่เนื้อหาหลัก */
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 50px 40px;
+            border-radius: 12px;
+            border: 1px solid #f3c4d8;
+            box-shadow: 0 4px 15px rgba(199, 91, 131, 0.12);
+        }
+
+        h1 {
+            color: #c75b83;
+            font-size: 2rem;
+            border-left: 5px solid #d98aa8;
+            padding-left: 15px;
+            margin-bottom: 30px;
+        }
+
+        /* รูปภาพประกอบบทความ */
+        .featured-img-box {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .featured-img-box img {
+            width: 320px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 12px;
+            border: 3px solid #ec9fbb;
+            box-shadow: 0 4px 12px rgba(199, 91, 131, 0.12);
+        }
+
+        /* เนื้อหาความสนใจ */
+        .article-card {
+            background: #fff5f9;
+            border: 1px solid #f7c9dc;
+            border-left: 5px solid #d66a91;
+            padding: 25px 30px;
+            border-radius: 8px;
+            margin-bottom: 35px;
+        }
+
+        .article-card p {
+            font-size: 1.1rem;
+            line-height: 1.85;
+            color: #8f3d60;
+            text-align: justify;
+            text-indent: 2.5em;
+            margin-bottom: 15px;
+        }
+
+        .article-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* ส่วนสถาบันและคณะที่สนใจ */
+        .target-section {
+            background: #fff8fb;
+            border: 1px solid #f3c4d8;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        /* ช่องใส่รูปตราสัญลักษณ์มหาวิทยาลัย */
+        .uni-img-box {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .uni-img-box img {
+            max-width: 260px;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            background: #fff;
+            padding: 10px;
+            border: 1px solid #f3c4d8;
+            box-shadow: 0 2px 8px rgba(199, 91, 131, 0.08);
+        }
+
+        .faculty-title {
+            text-align: center;
+            font-size: 1.4rem;
+            color: #c75b83;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px dashed #f3c4d8;
+        }
+
+        /* รายการสาขาวิชาต่อเรียงลงมา */
+        .major-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .major-item {
+            background: #fff;
+            border-left: 5px solid #d98aa8;
+            border-top: 1px solid #f3c4d8;
+            border-right: 1px solid #f3c4d8;
+            border-bottom: 1px solid #f3c4d8;
+            padding: 18px 25px;
+            border-radius: 6px;
+            box-shadow: 0 2px 5px rgba(199, 91, 131, 0.06);
+        }
+
+        .major-item h3 {
+            font-size: 1.15rem;
+            color: #c75b83;
+            margin-bottom: 6px;
+        }
+
+        .major-item p {
+            font-size: 1rem;
+            color: #8f3d60;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- เมนูเปลี่ยนหน้า -->
+<nav>
+    <a href="index.html">หน้าปก</a>
+    <a href="intro.html">คำนำ</a>
+    <a href="profile.html">ประวัติส่วนตัว</a>
+    <a href="education.html" class="active">ความสนใจศึกษาต่อ</a>
+    <a href="activities.html">กิจกรรม</a>
+    <a href="skills.html">ความสามารถพิเศษ</a>
+</nav>
+
+<div class="container">
+
+    <h1>ความสนใจในการศึกษาต่อ</h1>
+
+    <!-- 1. รูปภาพประกอบบทความ -->
+    <div class="featured-img-box">
+        <img src="IMG_1986.jpeg" alt="รูปประกอบความสนใจ">
+    </div>
+
+    <!-- 2. แรงบันดาลใจและความสนใจ -->
+    <div class="article-card">
+
+        <p>
+            ในฐานะนักเรียนมัธยมศึกษาปีที่ 6 ซึ่งกำลังอยู่ในช่วงเวลาสำคัญของชีวิต
+            ที่ต้องเลือกเส้นทางการศึกษาและอาชีพในอนาคต ข้าพเจ้ามีความสนใจในด้าน
+            การจัดการทรัพยากรมนุษย์ เนื่องจากข้าพเจ้าสนใจการทำงานร่วมกับผู้อื่น
+            การสื่อสาร และการบริหารจัดการบุคลากรภายในองค์กร
+            ข้าพเจ้ามองว่าทรัพยากรมนุษย์เป็นส่วนสำคัญขององค์กร
+            เพราะบุคลากรที่มีความสามารถและได้รับการดูแลอย่างเหมาะสม
+            สามารถช่วยให้องค์กรพัฒนาและดำเนินงานได้อย่างมีประสิทธิภาพ
+        </p>
+
+        <p>
+            ด้วยเหตุผลนี้ ข้าพเจ้าจึงสนใจที่จะศึกษาต่อด้านการจัดการทรัพยากรมนุษย์
+            เพื่อพัฒนาความรู้เกี่ยวกับการบริหารบุคลากร การสรรหาและคัดเลือกบุคลากร
+            การพัฒนาศักยภาพของพนักงาน รวมถึงการสร้างความสัมพันธ์ที่ดีภายในองค์กร
+            และสามารถนำความรู้ที่ได้รับไปประยุกต์ใช้ในการประกอบอาชีพในอนาคตได้
+        </p>
+
+    </div>
+
+    <!-- 3. คณะ/สาขา/มหาวิทยาลัย ที่สนใจ -->
+    <div class="target-section">
+
+        <!-- ช่องใส่รูปตราสัญลักษณ์มหาวิทยาลัย -->
+        <div class="uni-img-box">
+            <img src="IMG_3290.jpeg" alt="ตราสัญลักษณ์มหาวิทยาลัย">
+        </div>
+
+        <!-- ชื่อมหาวิทยาลัย -->
+        <h2 class="faculty-title">
+            มหาวิทยาลัยบูรพา
+        </h2>
+
+        <!-- รายการสาขาวิชาเรียงต่อกันลงมา -->
+        <div class="major-list">
+
+            <div class="major-item">
+                <h3>1. สาขาการจัดการทรัพยากรมนุษย์</h3>
+                <p>
+                    สนใจศึกษาด้านการบริหารและพัฒนาทรัพยากรมนุษย์
+                    การสรรหาและคัดเลือกบุคลากร การพัฒนาศักยภาพบุคลากร
+                    และการบริหารงานภายในองค์กร
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
